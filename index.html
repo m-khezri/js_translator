@@ -13,17 +13,19 @@
     <h1 class="title">Translator</h1>
     
     <label for="text_area">Please enter your words</label>
-    <textarea id="text_area"></textarea>
+    <textarea id="text_area">
+    </textarea>
     
+    <label for="output_box">Output:</label>
     <!-- Output div -->
     <div class="output_box">
 
     </div>
 
 
-    <button type="button" class="btn btn-primary">Spanish</button> 
-    <button type="button" class="btn btn-primary">French</button> 
-    <button type="button" class="btn btn-primary">German</button> 
+    <button type="button" onclick="spanish_tr()" id="spanish_btn" class="btn btn-primary">Spanish</button> 
+    <button type="button" onclick="french_tr()" id="french_btn" class="btn btn-primary">French</button> 
+    <button type="button" onclick="german_tr()" id="german_btn" class="btn btn-primary">German</button> 
 </div>
     <script src="main.js"></script>
 </body>

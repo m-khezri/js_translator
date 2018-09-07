@@ -1,4 +1,4 @@
-let spain {
+let spainish = {
     merry:"alegre",
     christmas:"Navidad",
     and:"y",
@@ -7,7 +7,7 @@ let spain {
     year:"año"
 };
 
-let german {
+let german = {
     merry:"fröhlich",
     christmas:"Weihnachten",
     and:"und",
@@ -16,7 +16,7 @@ let german {
     year:"Jahr"
 };
 
-let french {
+let french = {
     merry:"joyeux",
     christmas:"Noël",
     and:"et",
@@ -24,4 +24,18 @@ let french {
     new:"Nouveau",
     year:"an"
 };
+
+
+
+const spanish_tr =() => {
+    var x = document.getElementById("text_area").value;
+    
+    for (let i=0; i <=spanish.length; i++) {
+        document.getElementById("output_box").innerHTML = spanish[i];
+        i+=1;
+
+    }
+    
+
+}
 
