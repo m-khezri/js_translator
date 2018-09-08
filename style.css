@@ -32,13 +32,14 @@ label{
     width: 100%;
     height: 60px;
     resize: none;
+    background-color: lemonchiffon;
+    border: 1px solid orange;
 }
 
 .output_box{
-    background-color: lemonchiffon;
+    border: 1px solid lightgray;
     height: 60px;
-    border: 1px solid orange;
-    margin: 10px 0;
+    margin: 0 0 40px 0;
     padding:2%;
 
 }
