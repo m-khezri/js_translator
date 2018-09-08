@@ -25,6 +25,7 @@ let french = {
     year:"an"
 };
 
+const x =1;
 
 
 const spanish_tr =() => {
