@@ -12,21 +12,24 @@
     <div class="card_container">
     <h1 class="title">Translator</h1>
     
-    <label for="text_area">Please enter your words</label>
-    <textarea id="text_area">
-    </textarea>
+    <label for="inputBox">Please enter your words</label>
+    <textarea id="inputBox"></textarea>
     
-    <label for="output_box">Output:</label>
+
+
+    <button id="spanishButton" class="btn btn-primary">Spanish</button> 
+    <button id="frenchButton" class="btn btn-primary">French</button> 
+    <button id="germanButton" class="btn btn-primary">German</button> 
+<br>
+
+
+    <label for="returntext">Output:</label>
     <!-- Output div -->
-    <div class="output_box">
+    <div id="returnText"></div>
 
-    </div>
-
-
-    <button type="button" id="spanish_btn" class="btn btn-primary">Spanish</button> 
-    <button type="button" id="french_btn" class="btn btn-primary">French</button> 
-    <button type="button" id="german_btn" class="btn btn-primary">German</button> 
 </div>
+
+
     <script src="main.js"></script>
 </body>
 </html>
