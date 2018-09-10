@@ -28,7 +28,7 @@ label{
     box-shadow: 2px 2px 10px slategray;
 }
 
-#text_area{
+#inputBox{
     width: 100%;
     height: 60px;
     resize: none;
@@ -36,9 +36,10 @@ label{
     border: 1px solid orange;
 }
 
-.output_box{
+#returnText{
     border: 1px solid lightgray;
     height: 60px;
+    width: 100%;
     margin: 0 0 40px 0;
     padding:2%;
 
