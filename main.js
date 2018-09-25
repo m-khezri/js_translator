@@ -27,7 +27,7 @@ const french = {
 
 const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML += stringToPrint;
+    selectedDiv.innerHTML = stringToPrint;
 };
       
 const spanishTranslate = () => {
@@ -43,8 +43,7 @@ const spanishStringBuilder  = (inputWords) => {
     let newString = '';
     for(let i = 0; i < inputWords.length; i++) {
         let spanishWord = spanish[inputWords[i]];
-        newString += `<p>${spanishWord}</p>`
-
+        newString += `<span>${spanishWord + ' '}</span>`
     };
 
     return newString;
@@ -52,6 +51,11 @@ const spanishStringBuilder  = (inputWords) => {
 }
 const spanishButton = document.getElementById('spanishButton');
     spanishButton.addEventListener("click", spanishTranslate);
+
+
+
+
+// ----------------- German
 
     const germanTranslate = () => {
         const inputValue = document.getElementById('inputBox').value;
@@ -64,12 +68,16 @@ const spanishButton = document.getElementById('spanishButton');
         let newString = '';
         for(let i = 0; i < inputWords.length; i++) {
             let germanWord = german[inputWords[i]];
-            newString += `<p>${germanWord}</p>`
+            newString += `<span>${germanWord + ' '}</span>`
         };
         return newString;
     }
     const germanButton = document.getElementById('germanButton');
         germanButton.addEventListener("click", germanTranslate);
+
+
+
+// ----------------- French
 
         const frenchTranslate = () => {
             const inputValue = document.getElementById('inputBox').value;
@@ -82,7 +90,7 @@ const spanishButton = document.getElementById('spanishButton');
             let newString = '';
             for(let i = 0; i < inputWords.length; i++) {
                 let frenchWord = french[inputWords[i]];
-                newString += `<p>${frenchWord}</p>`
+                newString += `<span>${frenchWord + ' '}</span>`
             };
             return newString;
         }
